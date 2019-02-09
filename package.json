@@ -1,0 +1,43 @@
+{
+  "name": "ts-bunyan-rollbar",
+  "version": "0.0.1",
+  "description": "ts-bunyan-rollbar repo",
+  "scripts": {
+    "lint": "tslint -c tslint.json --project tsconfig.json 'src/**/*.ts'",
+    "lint:fix": "tslint -c tslint.json --project tsconfig.json --fix 'src/**/*.ts'",
+    "compile": "tsc",
+    "test": "jest",
+    "build": "npm run lint && npm run compile && npm run test",
+    "test:watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petercipov/ts-bunyan-rollbar.git"
+  },
+  "keywords": [
+    "tdd",
+    "bunyan",
+    "rollbar",
+    "typescript"
+  ],
+  "author": "Peter Cipov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/petercipov/ts-bunyan-rollbar/issues"
+  },
+  "homepage": "https://github.com/petercipov/ts-bunyan-rollbar#readme",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "devDependencies": {
+    "@types/jest": "^24.0.0",
+    "@types/bunyan": "^1.8.5",
+    "bunyan": "^1.8.12",
+    "rollbar": "^2.5.2",
+    "jest": "^24.1.0",
+    "ts-jest": "^23.10.5",
+    "tslint": "^5.11.0",
+    "tslint-config-standard": "^8.0.1",
+    "typescript": "^3.2.2"
+  },
+  "dependencies": {}
+}
