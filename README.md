@@ -1,7 +1,7 @@
 # ts-bunyan-rollbar
 Simple (0 dependencies) Rollbar adapter for Bunyan written in TypeScript
 
-```
+```ts
 import Rollbar from 'rollbar'
 import BunyanLogger from 'bunyan'
 import { RollbarStream } from 'ts-bunyan-rollbar'
