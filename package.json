@@ -26,8 +26,11 @@
     "url": "https://github.com/petercipov/ts-bunyan-rollbar/issues"
   },
   "homepage": "https://github.com/petercipov/ts-bunyan-rollbar#readme",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "files": [
+    "/lib"
+  ],
   "devDependencies": {
     "@types/jest": "^24.0.0",
     "@types/bunyan": "^1.8.5",
