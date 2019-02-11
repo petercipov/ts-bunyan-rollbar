@@ -22,14 +22,14 @@ export class RollbarStream extends Writable {
       throw new Error('bunyan-rollbar requires a raw stream. Please define the type as raw when setting up the bunyan-rollbar stream.')
     }
 
-    const { err, req, msg, ...custom } = chunk
+    const { err, req, msg, callback, ...custom } = chunk
 
     const payload = {
       level: levelMapping[chunk.level] || 'error',
       custom
     }
 
-    this.rollbar.log(msg, err, req, payload)
+    this.rollbar.log(msg, err, req, callback, payload)
     return true
   }
 }
